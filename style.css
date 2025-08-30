@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #39ff14; 
+    --dark-color: #0d1117;  
+    --card-bg-color: #161b22;
+    --light-color: #c9d1d9;  
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+    background:var(--dark-color);
+    color:var(--light-color);
+    line-height:1.6;
+}
+
+section{
+    padding:20px;
+    text-align:center;
+}
+
+h1,h2{
+    font-family:'Courier New', Courier, monospace;
+    color:var(--primary-color);
+    text-shadow: 0 0 5px var(--primary-color);
+}
+
+h2{
+    font-size:2rem;
+}
+
+header {
+    background: rgba(19, 20, 34, 0.521);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index : 100;
+}
+
+header h1{
+    margin : 0;
+    font-size : 1.5rem;
+}
+
+header nav a{
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+header nav a:hover{
+    color: var(--primary-color);
+}
+
+#hero{
+    background:linear-gradient(135deg,var(--primary-color),var(--dark-color));
+    color:var(--light-color);
+}
+
+#hero p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
+
+#hero button{
+    padding: 12px 25px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: var(--dark-color);
+    cursor:pointer;
+    font-size:bold;
+}
+
+#hero button:hover{
+    background:transparent;
+    color:var(--primary-color);
+}
+
+#skills li{
+    display:inline-block;
+    border:1px solid var(--primary-color);
+    color:var(--primary-color);
+    padding:10px 15px;
+    margin: 5px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+#projects{
+    background:var(--dark-color);
+}
+
+.projects-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.project{
+    background:var(--card-bg-color);
+    border: 1px solid var(--card-bg-color);
+    border-radius:8px;
+    width: 300px;
+}
+
+.project:hover{
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+}
+
+.project img{
+    width:100%;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+}
+
+.project p{
+    padding:20px;
+    font-weight:bold;
+}
+
+#contact {
+    background: var(--card-bg-color);
+}
+
+#contact input{
+    padding: 12px;
+    margin: 10px;
+    width: 250px;
+    border: 1px solid #555;
+    color: var(--light-color);
+    border-radius: 5px;
+}
+
+#contact button{
+    padding : 12px 25px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: var(--dark-color);
+    cursor:pointer;
+}
